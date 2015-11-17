@@ -11,9 +11,16 @@
  * Time: 23:44
  */
 
-echo "Hello world";
-echo "hello," . " " . "world!" . "!";
-echo 5*7;
+$myname = "Frodo Baggins";
+$myage = 111;
+echo "My name is" . $myname . " and I am " . $myage;
+
+$name = "Edgar";
+if($name == "Simon"){
+    print "I know you!";
+}else{
+    print "who are you?";
+}
 ?>
 </p>
 </body>
