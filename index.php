@@ -42,8 +42,8 @@ foreach($provisionedActivities as $x){
 
 foreach($provisionedActivities as $y){
     if($y == "drugs"){
-        $provisionedActivities[$y] = "hugs";
-        print "<p>$y</p>";
+        //$provisionedActivities[$y] = "hugs";
+        print "<p>hugs</p>";
     }else{
         print "<p>$y</p>";
     }
