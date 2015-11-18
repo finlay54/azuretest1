@@ -33,7 +33,7 @@ switch($wantedgood){
         echo "you must be 6 months old to buy sausage rolls";
         break;
     default:
-}*/
+}
 
 $provisionedActivities = array("specs", "drugs", "rock and roll");
 foreach($provisionedActivities as $x){
@@ -47,6 +47,13 @@ foreach($provisionedActivities as $y){
     }else{
         print "<p>$y</p>";
     }
+}*/
+$montharray = array([30]);
+$a = 1;
+for($i = 1; $i < 30; $i++){
+    $montharray[$i] = $a;
+    $a++;
+    echo "Day " . $montharray[$i];
 }
 
 ?>
