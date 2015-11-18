@@ -20,7 +20,7 @@ if($name == "Simon"){
     print "I know you!";
 }else{
     print "who are you?";
-}*/
+}
 $wantedgood = "mugs";
 switch($wantedgood){
     case "specs":
@@ -33,8 +33,20 @@ switch($wantedgood){
         echo "you must be 6 months old to buy sausage rolls";
         break;
     default:
-        echo "top kek";
+}*/
 
+$provisionedActivities = array("specs", "drugs", "rock and roll");
+foreach($provisionedActivities as $x){
+    print "<p>$x</p>";
+}
+
+foreach($provisionedActivities as $y){
+    if($y == "drugs"){
+        $provisionedActivities[$y] = "hugs";
+        print "<p>$y</p>";
+    }else{
+        print "<p>$y</p>";
+    }
 }
 
 ?>
