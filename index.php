@@ -50,12 +50,27 @@ foreach($provisionedActivities as $y){
 }*/
 $montharray = array([30]);
 $a = 1;
-for($i = 1; $i < 30; $i++){
+for($i = 1; $i < 31; $i++){
     $montharray[$i] = $a;
     $a++;
     echo "Day " . $montharray[$i];
 }
 
+for($j = 1; $j < 31; $j++){
+    echo "<p>on day" . $j . " the following products are available: ";
+    if($montharray[$j] % 2 != 0){
+        echo "Sausage rolls ";
+    }
+    elseif($montharray[$j] %3 != 0){
+        echo "Mugs ";
+    }
+    elseif($montharray[$j] % 4 != 0){
+        echo "Specs ";
+    }else{
+        echo "NONE";
+    }
+    echo "</p>";
+}
 ?>
 </p>
 </body>
